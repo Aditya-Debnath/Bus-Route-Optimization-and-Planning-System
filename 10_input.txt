@@ -1,0 +1,53 @@
+# Bus Routes Data
+BUS_ROUTES_START
+ROUTE 101 CityA CityB 60 100
+ROUTE 102 CityB CityC 45 80
+ROUTE 103 CityC CityD 75 120
+ROUTE 104 CityD CityA 90 150
+ROUTE 105 CityA CityC 50 90
+ROUTE 106 CityB CityD 70 110
+ROUTE 107 CityA CityE 85 140
+ROUTE 108 CityE CityC 55 95
+ROUTE 109 CityD CityE 65 105
+ROUTE 110 CityE CityB 80 130
+BUS_ROUTES_END
+
+# Bus Stop Graph Data
+BUS_STOPS_START
+STOP StopA
+STOP StopB
+STOP StopC
+STOP StopD
+STOP StopE
+STOP StopF
+STOP StopG
+STOP StopH
+BUS_STOPS_END
+
+BUS_EDGES_START
+EDGE StopA StopB 60
+EDGE StopB StopC 45
+EDGE StopC StopD 75
+EDGE StopD StopE 50
+EDGE StopE StopF 55
+EDGE StopF StopG 65
+EDGE StopG StopH 70
+BUS_EDGES_END
+
+# Buses Data for Knapsack
+BUSES_START
+BUS 50 20
+BUS 80 35
+BUS 120 50
+BUS 70 30
+BUS 90 40
+BUSES_END
+
+# Knapsack Budget
+BUDGET 250
+
+# Dijkstra Start and End Stops
+DIJKSTRA_STOPS StopA StopH
+
+# Sort By (time or distance)
+SORT_BY distance

@@ -1,0 +1,77 @@
+# Bus Route Optimization and Planning System Data File (bus_data.txt)
+
+# --- Bus Routes Data ---
+BUS_ROUTES_START
+ROUTE 1 CityA CityB 60 100
+ROUTE 2 CityC CityD 120 200
+ROUTE 3 CityB CityE 45 75
+ROUTE 4 CityD CityF 90 150
+ROUTE 5 CityE CityG 75 125
+ROUTE 6 CityF CityH 150 250
+ROUTE 7 CityG CityI 60 100
+ROUTE 8 CityH CityJ 180 300
+ROUTE 9 CityI CityK 45 75
+ROUTE 10 CityJ CityL 120 200
+ROUTE 11 CityK CityM 90 150
+ROUTE 12 CityL CityN 75 125
+ROUTE 13 CityM CityO 60 100
+ROUTE 14 CityN CityP 150 250
+ROUTE 15 CityO CityA 210 350
+BUS_ROUTES_END
+
+# --- Bus Stop Graph Data ---
+BUS_STOPS_START
+STOP CityA
+STOP CityB
+STOP CityC
+STOP CityD
+STOP CityE
+STOP CityF
+STOP CityG
+STOP CityH
+STOP CityI
+STOP CityJ
+STOP CityK
+STOP CityL
+STOP CityM
+STOP CityN
+STOP CityO
+STOP CityP
+BUS_STOPS_END
+
+# --- Bus Edges Data ---
+BUS_EDGES_START
+EDGE CityA CityB 60
+EDGE CityB CityE 45
+EDGE CityE CityG 75
+EDGE CityG CityI 60
+EDGE CityI CityK 45
+EDGE CityK CityM 90
+EDGE CityM CityO 60
+EDGE CityO CityA 210
+EDGE CityB CityC 50
+EDGE CityC CityD 120
+EDGE CityD CityF 90
+EDGE CityF CityH 150
+EDGE CityH CityJ 180
+EDGE CityJ CityL 120
+EDGE CityL CityN 75
+EDGE CityN CityP 150
+BUS_EDGES_END
+
+# --- Buses Data for Knapsack ---
+BUSES_START
+BUS 50 30
+BUS 80 45
+BUS 120 70
+BUS 30 20
+BUSES_END
+
+# --- Knapsack Budget ---
+BUDGET 300
+
+# --- Dijkstra Start and End Stops ---
+DIJKSTRA_STOPS CityA CityP
+
+# --- Sort By (time or distance) ---
+SORT_BY time
